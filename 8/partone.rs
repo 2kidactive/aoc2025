@@ -2,7 +2,7 @@ use std::fs;
 use std::collections::HashMap;
 
 fn main() {
-    let contents = fs::read_to_string("old.txt").expect("");
+    let contents = fs::read_to_string("data.txt").expect("");
     let points: Vec<Vec<u64>> = contents
         .lines()
         .map(|x| x
